@@ -19,7 +19,7 @@ export const Vehicle: React.FC<VehicleProps> = () => {
     { description: 'Specification 02', icon: Path },
     { description: 'Specification 03', icon: Payment },
   ];
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   return (
     <Card>
       <CardHeader title="Honda City" caption="Posted at 1 Nov, 9.30 AM" />
@@ -33,12 +33,7 @@ export const Vehicle: React.FC<VehicleProps> = () => {
             </p>
           )}
           <div className="toggle">
-            <Button
-              className="tertiary"
-              onClick={() => {
-                setToggle(!toggle);
-              }}
-            >
+            <Button className="tertiary" onClick = {()=>{setToggle(!toggle)}}>
               {toggle ? (
                 <>
                   Hide Details <Less className="icon" />
@@ -52,12 +47,12 @@ export const Vehicle: React.FC<VehicleProps> = () => {
           </div>
         </div>
         <div className="profile">
-          <img src={Profile} alt="Profile" style={{ height: '36px', width: '36px' }} />
-          <div className="details">
-            <h3>Rohan Sharma</h3>
-            <p>Bengaluru, Karnataka</p>
-          </div>
+        <img src={Profile} alt="Profile" style={{ height: '36px', width: '36px' }} />
+        <div className="details">
+          <h3>Rohan Sharma</h3>
+          <p>Bengaluru, Karnataka</p>
         </div>
+      </div>
       </CardContent>
     </Card>
   );

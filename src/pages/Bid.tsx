@@ -12,7 +12,7 @@ export const Bid: React.FC<BidProps> = () => {
         <h1 style={{ fontSize: '24px', lineHeight: '32px' }}>Old Car Available</h1>
         <Line className="line-primary" />
       </div>
-      <div style={{ margin: '20px' }}>
+      <div style={{ margin: 'auto', width: "400px" }}>
         <Vehicle />
         <Form />
       </div>

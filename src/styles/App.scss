@@ -4,43 +4,73 @@
     font-size: 12px;
     line-height: 18px;
     letter-spacing: -0.24px;
-
+    margin-bottom: 10px;
   }
   .toggle {
     background-color: #2355fc0f;
-    width: 335px;
+    margin: 0 -20px;
     align-items: center;
     height: 26px;
     display: flex;
     justify-content: center;
-    margin: 10px;
-    margin-left: -20px;
   }
   .icon {
     margin: 11px;
   }
 }
+
 .profile {
-  padding: 20px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: -30px;
 
   .details {
     display: flex;
     flex-direction: column;
     margin-left: 12px;
   }
-  h3{
+  h3 {
     font-size: 15px;
     letter-spacing: -0.15px;
     line-height: 20px;
+    margin-bottom: 4px;
   }
-  p{
+  p {
     font-size: 13px;
-    color: #8492A6;
+    color: #8492a6;
     letter-spacing: -0.13px;
     line-height: 18px;
+  }
+}
+
+.bid-form {
+  padding: 16px 0;
+  text-align: center;
+  border: 1px solid #0a22391f;
+  border-radius: 6px;
+  margin: 30px 0 22px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .cost {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .cost-button {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.user-details{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  input{
+    margin: 10px;
   }
 }

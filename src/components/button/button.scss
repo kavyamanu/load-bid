@@ -3,11 +3,32 @@ button {
   display: contents;
 
   &.primary {
-    color: #2355fc;
+    color: #FFFFFF;
+    background-color: #3054D6;
+    height: 52px;
+    width: 100%;
+    display:block;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 16px;
   }
+
   &.secondary {
-    color: #3054d6;
+    font-size: 13px;
+    color: #8492A6;
+    padding: 9px 16px;
+    display:block;
+    background-color: #F6F9FB80;
+    border-radius: 25px;
+    border: 1px solid #E7EBEE;
+    margin: 4px;
+    &.selected {
+      color: #3054d6;
+      background-color: #3054D60F;
+      border: 1px solid #3054D6;
+    }
   }
+
   &.tertiary {
     font-size: 12px;
     letter-spacing: -0.12px;

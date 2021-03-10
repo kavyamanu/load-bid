@@ -33,7 +33,12 @@ export const Vehicle: React.FC<VehicleProps> = () => {
             </p>
           )}
           <div className="toggle">
-            <Button className="tertiary" onClick = {()=>{setToggle(!toggle)}}>
+            <Button
+              className="tertiary"
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+            >
               {toggle ? (
                 <>
                   Hide Details <Less className="icon" />
@@ -46,15 +51,14 @@ export const Vehicle: React.FC<VehicleProps> = () => {
             </Button>
           </div>
         </div>
-      </CardContent>
-
-      <div className="profile">
-        <img src={Profile} alt="Profile" style={{ height: '36px', width: '36px' }} />
-        <div className="details">
-          <h3>Rohan Sharma</h3>
-          <p>Bengaluru, Karnataka</p>
+        <div className="profile">
+          <img src={Profile} alt="Profile" style={{ height: '36px', width: '36px' }} />
+          <div className="details">
+            <h3>Rohan Sharma</h3>
+            <p>Bengaluru, Karnataka</p>
+          </div>
         </div>
-      </div>
+      </CardContent>
     </Card>
   );
 };

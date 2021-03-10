@@ -2,12 +2,13 @@ import "./button.scss"
 
 interface ButtonProps {
   className:string;
-  onClick:()=>void
+  onClick?:()=>void;
+  type?: 'submit' | 'reset' | 'button';
 }
 
-export const Button: React.FC<ButtonProps> = ({children, className, onClick}) => {
+export const Button: React.FC<ButtonProps> = ({children, className, onClick, type}) => {
   return (
-    <button className={className} onClick ={onClick}>
+    <button className={className} onClick ={onClick} type={type}>
       {children}
     </button>
   );

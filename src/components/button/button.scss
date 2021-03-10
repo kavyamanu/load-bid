@@ -1,0 +1,19 @@
+button {
+  text-align: center;
+  display: contents;
+
+  &.primary {
+    color: #2355fc;
+  }
+  &.secondary {
+    color: #3054d6;
+  }
+  &.tertiary {
+    font-size: 12px;
+    letter-spacing: -0.12px;
+    border: 0px;
+    padding: 0px;
+    line-height: 32px;
+    color: #194dff;
+  }
+}

@@ -1,0 +1,26 @@
+.card {
+  box-shadow: #90909066 0px 0px 30px;
+  border: #0a22391f 1px;
+  border-radius: 6px;
+}
+.card-header {
+  background-color: #202942;
+  text-align: center;
+  padding: 18px;
+  border-radius: 6px 6px 0 0;
+}
+.card-content{
+  padding: 20px;
+}
+.card-header-title {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.card-header-caption {
+  font-size: 13px;
+  line-height: 18px;
+  color: #8492a6;
+}
+

@@ -1,0 +1,19 @@
+.list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 10px;
+}
+.list-item-icon {
+  margin-right: 20px;
+  width: 17px;
+}
+.list-item-description {
+  font-size: 15px;
+  line-height: 10px;
+}
